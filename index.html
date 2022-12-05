@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2905187905.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/Logo%20UiTM%20new.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#wish list">Wish List</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>IMD311 Individual Assignment</p>
+            <h1>Hi, I'm <span>Ezlein</span> from Selangor :)</h1>
+        </div>
+    </div>
+</div>
+<!-----------about------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/Passport%20Pic%202.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <br>
+                <p>Nur Ezlein Binti Zainal Abidin is my name. My birthdate is July 19, 2002. I am from Puchong, Selangor. I am the eldest of three siblings. My favourite color is purple. <br><br>I am now a Diploma in Faculty of Information Management student at UiTM Kota Samarahan Campus 1.</p>
+                <br><br>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('my name')">My Name</p>
+                    <p class="tab-links" onclick="opentab('age')">Age</p>
+                    <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                </div>
+                <div class="tab-contents active-tab" id="my name">
+                    <ul>
+                        <li><span>Full Name</span><br>Nur Ezlein Binti Zainal Abidin</li>
+                        <li><span>Chinese Name</span><br>陆逸灵</li>
+                    </ul>
+                </div>
+                 <div class="tab-contents" id="age">
+                    <ul>
+                        <li><span>Age</span><br>20</li>
+                    </ul>
+                </div>
+                 <div class="tab-contents" id="hobbies">
+                    <ul>
+                        <li><span>First</span><br>Watch K-Dramas</li>
+                        <li><span>Second</span><br>Baking</li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+<!----------education--------->
+<div id="education">
+    <div class="container">
+        <h1 class="sub-title">Education</h1>
+        <div class="education-list">
+            <div>
+                <i class="fa-solid fa-book"></i>
+                <h2>Primary School</h2>
+                <p>SJK(C) Yak Chee</p>
+                <a href="#">2009-2014</a>
+            </div> 
+            <div>
+                <i class="fa-solid fa-school"></i>
+                <h2>Secondary School</h2>
+                <p>SMK Seksyen 4 Bandar Kinrara</p>
+                <a href="#">2015-2019</a>
+            </div> 
+            <div>
+                <i class="fa-solid fa-building-columns"></i>
+                <h2>University</h2>
+                <p>UiTM Kota Samarahan</p>
+                <a href="#">2020-now</a>
+            </div> 
+        </div>
+    </div>
+</div>
+<!----------experience--------->
+<div id="experience">
+    <div class="container">
+        <h1 class="sub-title">Working Experience</h1>
+        <div class="work-list">
+            <div>
+                <h2>Infodel Management SDN BHD</h2>
+                <p>I worked for the company about two months.</p>
+                <a href="#">See more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------wish list--------->
+<div id="Gallery">
+    <div class="container">
+        <h1 class="sub-title">Wish List</h1>
+        <div class="wish-list">
+                <div class="wish">
+                <img src="Images/paris.jpg">
+                <br>
+                <p>I wish one day I can travel to Paris.</p>
+                <br><br>    
+            </div> 
+            <div>
+                <div class="wish">
+                <img src="Images/kor.jpg">
+                <br>
+                <p>I wish one day I can travel to Korea.</p>
+                <br><br>
+            </div> 
+        </div>
+         <div>
+                <div class="wish">
+                <img src="Images/results.jpg">
+                 <br>
+                <p>I wish I can get good results.</p>
+                <br><br>
+            </div> 
+        </div>
+    </div>
+</div>
+<!----------contact--------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> nurezleinz@gmail.com</p>
+                <p><i class="fas fa-phone-square"></i> 0105054903</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <br>
+                <a href="Images/IMD311%20CV%20sem5.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right"></div>
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Ezlein. Made with <i class="fa-solid fa-heart"></i></p>
+    
+    </div>
+</div>
+
+    
+    
+<script>
+    
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    
+</script>
+    
+<script>
+    
+    var sidemeu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+        function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+    
+
+  
+    
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbySncOLAjQaslaPn50FosDbE_uv7OOfWcaxtrrZWTMVY2QP0QaS-y0cGm6lQC8H0Fmt/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message Sent Successfully!"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+    })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
